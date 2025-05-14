@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drdgr11n404dt"
-path="res://.godot/imported/bullet.png-00529a014c5e889a2b0f8ff2905dafb3.ctex"
+uid="uid://b0cvft6j5nrqr"
+path="res://.godot/imported/ImpactEffect.png-55335121b7f814ef741bbed7d613ccad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Items/bullet.png"
-dest_files=["res://.godot/imported/bullet.png-00529a014c5e889a2b0f8ff2905dafb3.ctex"]
+source_file="res://Assets/Items/ImpactEffect.png"
+dest_files=["res://.godot/imported/ImpactEffect.png-55335121b7f814ef741bbed7d613ccad.ctex"]
 
 [params]
 

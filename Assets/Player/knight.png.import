@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0cvft6j5nrqr"
-path="res://.godot/imported/ImpactEffect.png-996abc9335ef6f57a6d89d68f7761eed.ctex"
+uid="uid://tuqsp4oa0jq7"
+path="res://.godot/imported/knight.png-54d1844c6dada85b9ccfa22e76da2955.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Items/ImpactEffect.png"
-dest_files=["res://.godot/imported/ImpactEffect.png-996abc9335ef6f57a6d89d68f7761eed.ctex"]
+source_file="res://Assets/Player/knight.png"
+dest_files=["res://.godot/imported/knight.png-54d1844c6dada85b9ccfa22e76da2955.ctex"]
 
 [params]
 

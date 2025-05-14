@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtoimxa8pmmn1"
-path="res://.godot/imported/Dungeon_Tileset.png-bda60d002bee67e34ec91fd5b8a36ff4.ctex"
+uid="uid://drdgr11n404dt"
+path="res://.godot/imported/bullet.png-369bc752ec5805e9277cafac12449c6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Dungeon/Dungeon_Tileset.png"
-dest_files=["res://.godot/imported/Dungeon_Tileset.png-bda60d002bee67e34ec91fd5b8a36ff4.ctex"]
+source_file="res://Assets/Items/bullet.png"
+dest_files=["res://.godot/imported/bullet.png-369bc752ec5805e9277cafac12449c6b.ctex"]
 
 [params]
 
