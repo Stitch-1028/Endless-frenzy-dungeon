@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://ddej5an44iuwq"]
+[gd_scene load_steps=10 format=3 uid="uid://ddej5an44iuwq"]
 
 [ext_resource type="Texture2D" uid="uid://drdgr11n404dt" path="res://Assets/Items/bullet.png" id="1_f8cdk"]
 [ext_resource type="Script" uid="uid://ciqhg7f4navxl" path="res://Scenes/projectile.gd" id="1_yr2qt"]
+[ext_resource type="PackedScene" uid="uid://b04arafb08m0p" path="res://Scenes/impact_effect.tscn" id="2_tl4hk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yr2qt"]
 atlas = ExtResource("1_f8cdk")
@@ -39,10 +40,23 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_yr2qt"]
+radius = 5.09902
+
 [node name="Projectile" type="Node2D"]
 script = ExtResource("1_yr2qt")
+impact_effect_scene = ExtResource("2_tl4hk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -1)
 sprite_frames = SubResource("SpriteFrames_cgh1o")
 autoplay = "default"
 frame_progress = 0.407989
+
+[node name="CollsionRange" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollsionRange"]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_yr2qt")

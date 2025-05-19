@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dve8b6qy65b16"]
+
+[ext_resource type="Script" uid="uid://e1lorbrgdtah" path="res://Scenes/AttackBack/attack_back.gd" id="1_nxogx"]
+
+[node name="AttackBack" type="Node2D"]
+script = ExtResource("1_nxogx")
+
+[node name="Timer" type="Timer" parent="."]

@@ -1,8 +1,10 @@
-[gd_scene load_steps=26 format=3 uid="uid://djbrt8nvlyq6o"]
+[gd_scene load_steps=28 format=3 uid="uid://djbrt8nvlyq6o"]
 
 [ext_resource type="Script" uid="uid://v7le6dg346dl" path="res://Scenes/Player/player.gd" id="1_a3d8c"]
 [ext_resource type="Texture2D" uid="uid://tuqsp4oa0jq7" path="res://Assets/Player/knight.png" id="1_uvnfx"]
 [ext_resource type="Script" uid="uid://dg72ast02gfgd" path="res://Scenes/Player/shoot_attack.gd" id="3_xpcdj"]
+[ext_resource type="PackedScene" uid="uid://ddej5an44iuwq" path="res://Scenes/projectile.tscn" id="4_mtuoh"]
+[ext_resource type="PackedScene" uid="uid://dve8b6qy65b16" path="res://Scenes/AttackBack/AttackBack.tscn" id="5_htcer"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a3d8c"]
 size = Vector2(10, 13)
@@ -176,4 +178,11 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="ShootAttack" type="Node2D" parent="."]
+position = Vector2(1, 7)
 script = ExtResource("3_xpcdj")
+projectile_scene = ExtResource("4_mtuoh")
+
+[node name="ShootTimer" type="Timer" parent="ShootAttack"]
+wait_time = 0.5
+
+[node name="AttackBack" parent="." instance=ExtResource("5_htcer")]
